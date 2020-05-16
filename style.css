@@ -2,7 +2,7 @@ body {
     background: url(static/ron-whitaker-mVuKCYMGZBM-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    background-color: darkgray;
+    background-color: rgb(20, 20, 20);
     margin: 15px;
     font-family: Lato;
     color: aliceblue;
@@ -45,3 +45,21 @@ h1 {
 a {
     color: rgba(01,01,01,.7);
 }
+
+#homepage {
+    font-size: 20px ;
+    text-shadow:    0px 4px 3px rgba(0, 0, 0, 0.6),
+    0px 8px 13px rgba(0,0,0,0.2),
+    0px 18px 23px rgba(0,0,0,0.2);
+}
+
+#contact {
+    font-size: 20px;
+    text-shadow:    0px 4px 3px rgba(0, 0, 0, 0.6),
+    0px 8px 13px rgba(0,0,0,0.2),
+    0px 18px 23px rgba(0,0,0,0.2);
+}
+
+#contact a {
+    color: aliceblue;
+}   

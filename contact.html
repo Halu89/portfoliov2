@@ -1,39 +1,58 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>CBriand</title>
-</head>
-
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+        <!-- Fonts and icons -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    
+        <!-- My CSS -->
+        <link rel="stylesheet" type='text/css' href="style.css">
+        <title>Purrfect match!</title>
+    </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <img src="logo.png" alt="Logo">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <a href="#">Logo placeholder</a>
+                    <ul class="nav navbar-nav navbar-left ml-auto">
+                        <li class="nav-item px-2 active">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="navbar">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contacts</a></li>
-                </ul>
-    
-            </div>
-            
         </nav>
-
     </header>
 
-    <main>
-        <h1>Contact</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat aliquam eros lacinia convallis. Phasellus nunc augue, eleifend in eros eu, viverra finibus velit. Suspendisse euismod tempor nulla, non congue enim semper eget. Aenean lacinia nunc turpis, vel sollicitudin odio rhoncus quis. Donec a felis eu enim euismod consectetur. Pellentesque ac imperdiet enim. Cras dictum dignissim hendrerit. Maecenas tincidunt dapibus dictum. Aenean ut ligula vel ipsum malesuada aliquam. Aliquam pretium ante suscipit libero sodales, in luctus est aliquam.</p>
-        <p></p>
+    <main class="container d-flex flex-row" id='contact'>
+        <p class="px-5"><i class="far fa-envelope"></i>  corentin.briand@gmail.com</p> 
+        <p class="px-5"><i class="fas fa-phone-alt"></i>  +33 6 17 64 84 07</p>
+        <p class="px-5"><i class="fab fa-github"></i> <a href="https://github.com/Halu89">https://github.com/Halu89</a> </p>
+
     </main>
-    <footer>
-        <small>All rights reserved. Corentin Briand</small>
+
+    <footer class='container text-right'>
+        <small>&copy; Corentin Briand 2020. All rights reserved.</small>
     </footer>
 </body>
 
