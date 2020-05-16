@@ -63,3 +63,9 @@ a {
 #contact a {
     color: aliceblue;
 }   
+
+footer {
+    position: absolute;
+    bottom: 5px;
+    color: rgba(132, 138, 155, 0.562);
+}
