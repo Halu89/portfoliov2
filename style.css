@@ -4,7 +4,7 @@ body {
     background-position: center;
     background-color: rgb(20, 20, 20);
     margin: 15px;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     color: aliceblue;
 }
 
@@ -36,11 +36,6 @@ h1 {
     font-size: 5em;
 }
 
-.navbar {
-    border-radius: 15px 0;
-    font-weight: 800;
-    text-transform: capitalize;
-}
 
 a {
     color: rgba(01,01,01,.7);
@@ -64,8 +59,56 @@ a {
     color: aliceblue;
 }   
 
+#navbarNav img {
+    height: 80px;
+    position: absolute;
+    margin-top: 15px;
+}
+
 footer {
     position: absolute;
     bottom: 5px;
     color: rgba(132, 138, 155, 0.562);
+}
+
+
+#mainNavbar {
+    transition: background 0.6s;
+    border-radius: 15px 0;
+    font-weight: 800;
+    background-color: aliceblue;
+}
+#mainNavbar li{
+    height: 2.5rem;
+    width: fit-content;
+}
+
+#mainNavbar li:hover {
+    border-bottom: rgb(96, 96, 110) solid 5px;
+}
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    #mainNavbar {
+        background: transparent;       
+    }
+
+    .navbar-toggler {
+        background: aliceblue;
+    }
+    
+    #mainNavbar a {
+        color: aliceblue;
+        text-transform: uppercase;
+    }
+    #mainNavbar .active a {
+        color: rgb(228, 193, 148);
+
+    }
+    #mainNavbar li:hover {
+        border-bottom: none;
+    }
+    #navbarNav img {
+        display: none;
+    }
 }
