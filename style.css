@@ -49,15 +49,15 @@ a {
     0px 8px 13px rgba(0,0,0,0.2),
     0px 18px 23px rgba(0,0,0,0.2);
 }
-
+/* 
 @media (max-width : 600px) {
     #homepage {
         font-size: 1.4rem;
     }
-}
+} */
 
 #contact {
-    font-size: 2rem;
+    font-size: 4rem;
     text-shadow:    0px 4px 3px rgba(0, 0, 0, 0.6),
     0px 8px 13px rgba(0,0,0,0.2),
     0px 18px 23px rgba(0,0,0,0.2);
@@ -71,8 +71,11 @@ a {
 #contact a {
     color: aliceblue;
     font-size: 1.5rem;
+    transition: 0.3s ease-out;
 }   
-
+#contact a:hover {
+    transform: translateY(-8px);
+} 
 #navbarNav img {
     height: 80px;
     position: absolute;
@@ -85,14 +88,18 @@ footer {
     color: rgba(132, 138, 155, 0.562);
 }
 
-@media (max-width : 600px) {
+@media (max-width : 900px) {
     footer {
         position: static;
+    }
+    #contact {
+        margin-top: -50px;
     }
     #contact .contact-links {
         display: flex;
         flex-direction: column;
     }
+
 }
 
 #mainNavbar {
@@ -145,13 +152,6 @@ footer {
     animation-fill-mode: forwards;
 }
 
-@keyframes appear {
-    100% {
-        opacity: 1
-    }
-}
-
-
 #question {
     opacity: 0;
     animation-name: appear;
@@ -174,4 +174,10 @@ footer {
     animation-duration: 2s;
     animation-delay: 8s;
     animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    100% {
+        opacity: 1
+    }
 }
