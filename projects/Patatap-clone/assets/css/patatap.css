@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding-top: 10px;
+    color: rosybrown;
+    background-color:rgb(28, 28, 28);
+    z-index: 1;
+}
+
+h5 {
+    margin: 0;
+    font-size: large;
+}
+
+canvas {
+    width: 100%;
+    background-color: rgb(28, 28, 28);
+}
