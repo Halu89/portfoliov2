@@ -49,12 +49,7 @@ a {
     0px 8px 13px rgba(0,0,0,0.2),
     0px 18px 23px rgba(0,0,0,0.2);
 }
-/* 
-@media (max-width : 600px) {
-    #homepage {
-        font-size: 1.4rem;
-    }
-} */
+
 
 #contact {
     font-size: 4rem;
