@@ -1,178 +1,179 @@
 body {
-    background: url(static/ron-whitaker-mVuKCYMGZBM-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    background-color: rgb(20, 20, 20);
-    margin: 15px;
-    font-family: Lato, sans-serif;
-    color: aliceblue;
+  background: url(static/ron-whitaker-mVuKCYMGZBM-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(20, 20, 20);
+  margin: 15px;
+  font-family: Lato, sans-serif;
+  color: aliceblue;
 }
 
 main.container {
-    height: 80%;
+  height: 80%;
 }
 
 main {
-    padding-top: 5%;
+  padding-top: 5%;
 }
 #content {
-    text-align: center;
-    padding-top: 25%;  
-    text-shadow:    0px 4px 3px rgba(0,0,0,0.4),
-                    0px 8px 13px rgba(0,0,0,0.1),
-                    0px 18px 23px rgba(0,0,0,0.1);    
+  text-align: center;
+  padding-top: 25%;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .card-body {
-    background-color: rgba(3, 3, 3, 0.1);
+  background-color: rgba(3, 3, 3, 0.1);
 }
 
 hr {
-    border: 0.5px solid;
+  border: 0.5px solid;
 }
 
 h1 {
-    font-weight: 700;
-    font-size: 5em;
+  font-weight: 700;
+  font-size: 5em;
 }
 
-
 a {
-    color: rgba(01,01,01,.7);
+  color: rgba(01, 01, 01, 0.7);
 }
 
 #homepage {
-    font-size: 2rem;
-    color: aliceblue;
-    
-    text-shadow:    0px 4px 3px rgba(0, 0, 0, 0.6),
-    0px 8px 13px rgba(0,0,0,0.2),
-    0px 18px 23px rgba(0,0,0,0.2);
+  font-size: 2rem;
+  color: aliceblue;
+
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.6), 0px 8px 13px rgba(0, 0, 0, 0.2),
+    0px 18px 23px rgba(0, 0, 0, 0.2);
 }
 
-
 #contact {
-    font-size: 4rem;
-    text-shadow:    0px 4px 3px rgba(0, 0, 0, 0.6),
-    0px 8px 13px rgba(0,0,0,0.2),
-    0px 18px 23px rgba(0,0,0,0.2);
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  font-size: 4rem;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.6), 0px 8px 13px rgba(0, 0, 0, 0.2),
+    0px 18px 23px rgba(0, 0, 0, 0.2);
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #contact a {
-    color: aliceblue;
-    font-size: 1.5rem;
-    transition: 0.3s ease-out;
-}   
+  color: aliceblue;
+  font-size: 1.5rem;
+  transition: 0.3s ease-out;
+}
 #contact a:hover {
-    transform: translateY(-8px);
-} 
+  transform: translateY(-8px);
+}
 #navbarNav img {
-    height: 80px;
-    position: absolute;
-    margin-top: 15px;
+  height: 80px;
+  position: absolute;
+  margin-top: 15px;
 }
 
 footer {
-    position: absolute;
-    bottom: 5px;
-    color: rgba(132, 138, 155, 0.562);
+  /* position: absolute; */
+  /* bottom: 5px; */
+  color: rgba(132, 138, 155, 0.562);
 }
 
-@media (max-width : 900px) {
-    footer {
-        position: static;
-    }
-    #contact {
-        margin-top: -50px;
-    }
-    #contact .contact-links {
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 900px) {
+  footer {
+    position: static;
+  }
 
+  #contact .contact-links {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 #mainNavbar {
-    transition: background 0.6s;
-    border-radius: 15px 0;
-    font-weight: 800;
-    background-color: aliceblue;
+  transition-duration: 0.6s;
+  border-radius: 15px 0;
+  font-weight: 800;
+  background-color: aliceblue;
 }
-#mainNavbar li{
-    height: 2.5rem;
-    width: fit-content;
+#mainNavbar li {
+  height: 2.5rem;
+  width: fit-content;
 }
 
 #mainNavbar li:hover {
-    border-bottom: rgb(100, 29, 29) solid 0.25rem;
+  border-bottom: rgb(100, 29, 29) solid 0.25rem;
 }
 
 /* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
-    #mainNavbar {
-        background: transparent;       
-    }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  body::-webkit-scrollbar {
+    display: none;
+  }
 
-    .navbar-toggler {
-        background: aliceblue;
-    }
-    
-    #mainNavbar a {
-        color: aliceblue;
-        text-transform: uppercase;
-    }
-    #mainNavbar .active a {
-        color: rgb(228, 193, 148);
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  #mainNavbar {
+    background: transparent;
+  }
 
-    }
-    #mainNavbar li:hover {
-        border-bottom: none;
-    }
-    #navbarNav img {
-        display: none;
-    }
+  .navbar-toggler {
+    background: aliceblue;
+  }
+
+  #mainNavbar a {
+    color: aliceblue;
+    text-transform: uppercase;
+  }
+  #mainNavbar .active a {
+    color: rgb(228, 193, 148);
+  }
+  #mainNavbar li:hover {
+    border-bottom: none;
+  }
+  #navbarNav img {
+    display: none;
+  }
 }
 
 /* Homepage animations */
 #hi {
-    opacity: 0;
-    animation-name: appear;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 #question {
-    opacity: 0;
-    animation-name: appear;
-    animation-duration: 2s;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
 }
 
 #answer {
-    opacity: 0;
-    animation-name: appear;
-    animation-duration: 2s;
-    animation-delay: 5.5s;
-    animation-fill-mode: forwards;
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-delay: 5.5s;
+  animation-fill-mode: forwards;
 }
 
 #cta {
-    opacity: 0;
-    animation-name: appear;
-    animation-duration: 2s;
-    animation-delay: 8s;
-    animation-fill-mode: forwards;
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes appear {
-    100% {
-        opacity: 1
-    }
+  100% {
+    opacity: 1;
+  }
 }
